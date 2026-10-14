@@ -31,7 +31,7 @@ Catatan eksperimen singkat (apa yang dicoba, apa yang berhasil/gagal):
 
 ```bash
 pip install -r requirements.txt
-# atau buka training.ipynb (Colab / Jupyter) dan Run All
+python train.py --data ./train --epochs 10
 python evaluate.py --submission ./submission --data ./my_val
 ```
 
@@ -45,7 +45,7 @@ submission/
   model.pth         # state_dict model terbaik
   requirements.txt
 evaluate.py         # skrip evaluasi resmi
-training.ipynb      # notebook pelatihan
+train.py            # skrip pelatihan
 requirements.txt
 docs/progress_mingguan.md
 ```
